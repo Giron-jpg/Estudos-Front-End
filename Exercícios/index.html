@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/plantinha.ico" type="image/x-icon">
+    <!-- Essa linha de comando inclui uma imagem para a página-->
+    <title>Meu primeiro exercício</title>
+    <style> body{
+        background-color: beige;
+    }
+    mark{
+        background-color: lime;
+    }</style>
+    <!-- A mudança de estilo no cabeçalho muda a configuração pro texto todo-->
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <hr>
+    <p>Esse é o meu primeiro documento HTML</p>
+    <P>Este é um momento único</P>
+    <p>Essa linha foi escrita com <br> uma quebra de linha br</p>
+    <p> para escrever os comandos &lt;p&gt; e &lt;/p&gt; é preciso usar o & seguido de lt <br> para o símbolo da esquerda e gt para o símbolo da direita</p>
+    <p>Na verdade essas abreviações são para: Maior que (Greather than) e menor que (Less Than)</p> 
+    <p>A uso do & auxilia na inserção de qualquer tipo de simbolo e emoji. Importante ressaltar que ao final do comando dever constar o ;</p>
+    <!-- o comando "p" cria um parágrafo, o comando "h1" cria um título, o comando "hr" produz na pagina uma linha horizontal e o comando "br" faz uma quebra de linha -->
+    <p>&reg; &copy;; &trade; &euro; &dollar; &Delta;</p>
+    <P> Vamos adicionar alguns emojis; <br> <!-- a inserção de emojis e símbolos são antecipadas pelo "e" comercial. No caso dos emojis o xh representaria o sistema hexadecimal-->
+        &#x1F680;
+        &#x1F311;
+        &#x1F30E;
+        &#x1F30C;
+        &#x1F310;
+        &#x1F6F0;
+        &#xFE0F;
+    </P>
+    <hr>
+    <h1>Testando imagens</h1>
+    <hr>
+    <h2>Uso de imagens baixadas</h2>
+    <p>As imagens são inseridas pelo seu destino e depois há um texto alternativo que deve descrever a imagem afim de tornar a página inclusiva para PcD</p>
+    <!-- as imagens são inseridas pelo seu destino e depois há um texto alternativo que deve descrever a imagem afim de tornar a página inclusiva para PcD -->
+    <p><img src="imagens/logo html200.webp" alt="Logo HTML">  <img src="imagens/logo css200.webp" alt="Logo CSS"></p>
+    <h2>Uso de imagens da internet</h2>
+
+    <p>Também é possível carregar imagens externas. Para isso copiamos o endereço da imagem (URL). <br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png?20210407134359" alt="Logo Javascript"> </p> <!-- isso é uma URL, se o site que armazena imagem cair, esta logo também fica fora do ar -->
+
+
+    <hr>
+    <h1>Formatação e significado de texto</h1>
+    <hr>
+    <h2>Negrito</h2>
+    <h3>Tag b</h3>
+    <p>Para usar negrito usamos a tag b em <b>uma frase importante</b>. <br>
+    </p>
+    <h3>Tag Strong</h3>
+    <p>
+    Também podemos colocar em negrito através do comando <strong>STRONG</strong> porém com essa tag damos um <strong>significado mais forte e não penas na Formatação</strong> <br></p>
+
+    <h2>Italico</h2>
+    <h3>Usando tag i</h3>
+    <p><i>Esse parágrafo usa a tag i para deixar em itálico</i></p>
+    <h3>Usando a tag em</h3>
+    <p>A tag "em" também destaca em italico uma <em>frase importante</em></p>
+    <h2>Texto marcado</h2>
+    <h3>Tag Mark</h3>
+    <p>Quando quiser <mark>marcar o texto</mark> podemos destacar com a tag mark que normalmente é amarelo porém no cabeçalho eu fiz a alteração para verde de toda marcação que encontrarmos.
+    <br>
+    <mark style="background-color: aqua;">Este outro texto foi marcado com cor diferente usando a tag mark com style</mark></p>
+    <h2>Letras pequenas grandes e pequenas</h2>
+    <p>É possível usar a tag big e small pra deixar <big>textos grandes</big> <small>e pequenos</small>, porém o big não é mais comum ser usado</p>
+    <h2>Texto riscado</h2>
+    <p>Podemos usar a tag del para considerar um <del>texto excluído</del></p>
+    <h2>Texto Inserido (Sublinhado)</h2>
+    <h3>Tag ins</h3>
+    <p>Podemos usar a tag para dizer que <ins>um texto foi inserido</ins></p>
+    <h3>Tag u</h3>
+    <p>Provavelmente entrará em desuso para marcar <u>texto sublinhado</u></p>
+    <h2>Texto sobrescrito e subescrito</h2>
+    <h3>Texto sobrescrito</h3>
+    <p>Podemos sobrescrever um texto (colocar na potência) utilizando a tag sup: 1 Byte = 2<sup>8</sup></p>
+    <h3>Texto subescrito</h3>
+    <p>Usado com a tag sup para subescrever um texto. Ex.: H<sub>2</sub>O (no caso o numero 2 apenas)</p>
+    <h2>Citações ""</h2>
+    <p><q>Este texto é em referencia ao material disposto pelo github do guanabara</q> Quando usamos a tag q para inserir aspas o conteudo passa a ter significado.</p>
+    <p>Outra citação é com a tag blockquote que reserva uma parte para citar.</p>
+    <blockquote cite="se quiser da pra inserir uma url para aparecer no google como referenciado, para manter os direitos autorais"><q>Alguem disse algo uma vez quando eu li</q></blockquote>
+
+    <h2>Fonte Monoespaçada</h2>
+    <p>Usamos a tag code para fazer um <code>texto.ficar.mono.espaçado</code> porém ele perde a identação quando vc for tentar escrever linhas de comando, sendo assim usamos a tag pre. Exemplo:
+    <pre><code>
+num = int(input('Digite um valor: '))
+if (num % 2) == 0:
+    print('O número é par')
+else:
+    print('É ímpar')
+    </code></pre></p>
+    <h2>Envelopando (Abreviações)</h2>
+    <p>Usamos a tag abbr para inserir uma marcação para abreviar algo. Ex.: <abbr title="Condições Normais de Temperatura e Pressão">CNTP</abbr></p>
+<hr>
+<h1>Criando 3 tipos de lisatas</h1>
+<hr>
+<h2>Ordenadas</h2>
+<p>Nela a ordem faz diferença e usamos a tag OL para criar a lista que seria order lists e em seguida usamos a tag li para listar cada item da lista.
+</p>
+<ol type="1" start="1"><li>primeiro digita a tag ol</li>
+    <li>depois cada li vai ser um item</li>
+    <li>e ta pronto sua listinha</li>
+</ol>
+<h2>Não Ordenadas</h2>
+<p>Listas que a ordem não importa são chamadas de unorder list sendo assim usamos a tag ul</p>
+<ul>
+    <li>instagram</li>
+    <li>facebook</li>
+    <li>linked in</li>
+</ul>
+<h2>Listas de definição</h2>
+<p>É como se fosse um dicionário, onde utilizamos a tag dl para criar a lista, dt para identificar o termo e dd para a descrição.</p>
+<dl>
+    <dt>Corrente elétrica</dt>
+    <dd>É um fluxo de cargas</dd>
+</dl>
+
+
+
+</body>
+</html>
