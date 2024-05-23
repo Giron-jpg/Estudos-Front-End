@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/plantinha.ico" type="image/x-icon">
+    <title>Meu primeiro exercício</title>
+    <style> body{
+        background-color: beige;
+    }
+    mark{
+        background-color: lime;
+    }</style>
+    <title>Testando Imagens</title>
+</head>
+<body>
+    <p><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="formata.html">Formatação</a></li>
+        <li><a href="listas.html">Listas</a></li>
+        <li><a href="imagen.html">Mídias</a></li>
+        <li><a href="desafios.html">Desafios</a></li>
+    </ul></p>
+    <h1>Testando imagens</h1>
+    <hr>
+    <h2>Uso de imagens baixadas</h2>
+    <p>Para inserir uma imagem usamos a tag img, onde em src inserimos seu destino e depois há um texto alternativo (alt) que deve descrever a imagem afim de tornar a página inclusiva para PcD</p>
+    <!-- as imagens são inseridas pelo seu destino e depois há um texto alternativo que deve descrever a imagem afim de tornar a página inclusiva para PcD -->
+    <p><img src="imagens/logo html200.webp" alt="Logo HTML">  <img src="imagens/logo css200.webp" alt="Logo CSS"></p>
+    <h2>Uso de imagens da internet</h2>
+
+    <p>Também é possível carregar imagens externas. Para isso copiamos o endereço da imagem (URL). <br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png?20210407134359" alt="Logo Javascript"> </p> <!-- isso é uma URL, se o site que armazena imagem cair, esta logo também fica fora do ar -->
+    
+    <h2>Imagens Dinâmicas</h2>
+    <p>Este tópico trata de como você deve manipular uma imagem para que ela mude seu tamanho de acordo com o tamanho do navegador utilizado. Esse tipo de imagem ajuda a evitar que o site tenha problemas de rejeição por escrolagem lateral.
+    <br>Sendo assim vamos alterar o tamanho da imagem de acordo com o tamanho do navegador usando as tags picture que aparentemente encapsula configurações pra uma imagem; e a tag source:media:type que é capaz de determinar o que ocorre quando o tamanho do navegador for diferente.
+    <br>
+    Dentro da tag picture inserimos as imagens na ordem q devem aparecer de acordo com o tamanho. Um exempo é: definir a imagem grande como padrão, caso o navegador tenha 1050px (parâmetro media como max-width) usamos a imagem media (parâmetros srcset e type identificando o tipo de arquivo image/png nesse caso); e caso otamanho máximo da tela seja 750px então usamos a imagem pequena. Inserimos 50px a mais em cada um para evitar aparecer a barra de rolagem.
+
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/fotop.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/fotom.png" type="image/png">
+        <img src="imagens/fotog.png" alt="teste tamanho g">
+    </picture>
+    <hr>
+
+    <h2>Inserindo Audios</h2>
+    <p>Para inserir audio usamos a tag audio, como parâmetros podemos inserir controls para aparecer controles de play, pause e controle de volume; outro parâmetro é o autoplay; loop para executar a musica em looping; preload para determinar se o audio deve ser carregado antes ou depois. Para ter autoplay é interessante ter o arquivo em todos os formatos (MP3, WAV, OGG) para evitar erros de compatibilidade.</p>
+    <audio src="imagens/audios/lou monade.mp3" controls autoplay></audio>
+    <p>No caso de inserir os diferentes formatos, podemos usar a tag audio para encapsular as buscas dos arquivos nos diferentes formatos, e assim se um formato nao der carrega outro. Obs.: Arquivos wav sao muito pesados.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="imagens/audios/poulo passivo.mp3" type="audio/mpeg">
+        <source src="imagens/audios/poulo passivo.ogg" type="audio/ogg">
+        <source src="imagens/audios/poulo passivo.wav" type="audio/wav">
+        <p>Não foi possível carregar</p>
+    </audio>
+
+    <h2>Inserindo Vídeos</h2>
+    <h3>Vídeos os hospedados em servidor próprio</h3>
+    <p>Padrões mais utilizados e suportados são MP4, M4V WEBM e OGV. Usamos o handbreak para fazer a conversão, porém para converter para ovg pode ser usado outro sites.</p>
+    <p>Para inserir vídeos usamos a tag video e assim como nas imagens podemos usa-la para encapsular todos os tipos de video. Usamos os parâmetros controls para ter controle de play, pause e volume; usamos poster para aparecer uma imagem fixa no video; e width para determinar a largura do vídeo.</p>
+    <video controls poster="" width="560px">
+        <source src="imagens/videos/meuvideo.mp4.mp4" type="video/mp4">
+        <source src="imagens/videos/meuvideo.webm.webm" type="video/mp4">
+    </video>
+    
+    <h3>Vídeos de outros sites</h3>
+    <p>Para isto usamos a tag iframe que vem em código pronto no compartilhamento do vídeo que pode ser obtido do youtube ou vimeo.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=uqNf6QMvE_KRdTwu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>
