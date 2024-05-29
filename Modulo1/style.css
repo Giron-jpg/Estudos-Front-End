@@ -14,15 +14,15 @@ body{
 nav ul{
     background-color: #012030;
     list-style-type: none;
-    overflow: hidden;
+    overflow: hidden; /**/
     margin: 0;
     padding: 0;
 }
 nav a{
-    text-decoration: none;
+    text-decoration: none; /*Tira configurações de texto*/
     color: white;
     padding:  16px;
-    display: block;
+    display: block; /*Configura o formato da palavra como caixa*/
 }
 nav li {
     float: left;
@@ -37,7 +37,8 @@ header h1 {
 }
 article div{
     background-color: white;
-    padding: 4px;
+    margin-top: 20px;
+    padding: 20px;
     border-radius: 5px;
     box-shadow: 4px 4px 10px #012030;
 
