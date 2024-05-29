@@ -22,43 +22,43 @@
             <li><a href="desafios.html">Desafios</a></li>
         </ul>
     </nav>
-    <p>Esse é o meu primeiro documento HTML e nele pretendo fazer um resumo de todas as tags que forem aprendidas durante o curso de HTML e CSS do Guanabara.</p>
-
-    <p>Essa linha foi escrita com <br> uma quebra de linha br</p>
+    <section>
+        <article >
+            <div id="ctd1">
+                <p>Esse é o meu primeiro documento HTML e nele pretendo fazer um resumo de todas as tags que forem aprendidas durante o curso de HTML e CSS. <br> (Essa linha foi escrita com uma quebra de linha br).</p>
+                
+                <p> para escrever os comandos &lt;p&gt; e &lt;/p&gt; é preciso usar o & seguido de lt <br> para o símbolo da esquerda e gt para o símbolo da direita</p>
+                <p>Na verdade essas abreviações são para: Maior que (Greather than) e menor que (Less Than)</p>
+                <p>O uso do & auxilia na inserção de qualquer tipo de simbolo e emoji. Importante ressaltar que ao final do comando dever constar o ; (ponto e vírgula). Exemplos:</p>
+                <!-- o comando "p" cria um parágrafo, o comando "h1" cria um título, o comando "hr" produz na pagina uma linha horizontal e o comando "br" faz uma quebra de linha -->
+                <p>&reg; &copy;; &trade; &euro; &dollar; &Delta;</p>
+                <P> Vamos adicionar alguns emojis com base no site emojipedia usando o código hexadecimal; <br> <!-- a inserção de emojis e símbolos são antecipadas pelo "e" comercial. No caso dos emojis o xh representaria o sistema hexadecimal-->
+                &#x1F680; &#x1F311; &#x1F30E; &#x1F30C; &#x1F310; &#x1F6F0; &#xFE0F;
+            </div>
+            </p>
+        </article>
+        <article id="ctd2">
+            <h2>Usando links</h2>
+            <h3>Links externos</h3>
+            <p>Para lidar com links externos usamos a tag a e inserindo a url em href, com ela também podemos associar os comandos<code> target ="_blank" e rel= "external" </code> para fazer com que o link acesse outra página</p>
+            <p>Exemplo <a href="https://github.com/Giron-jpg" target="_blank" rel="external">Github</a></p>
+            <h2>Links internos</h2>
+            <p>Para inserir links internos também utilizamos o tag a "âncora", porém damos preferência a usar a mesma página</p>
+            <h2>Links para download</h2>
+            <p>Segue link para download teste do meu currículo por meio da tag a, com o parâmetro download e o type (o tipo é encontrado através do site iana.org): <a href="teste/curriculo.pdf" download="curriculo.pdf" type="application/pdf">currículo</a></p>
+            <p>Para arquivo em zip usariamos no parametro download o nome do arquivo e no type "application/zip"</p>
     
-    <p> para escrever os comandos &lt;p&gt; e &lt;/p&gt; é preciso usar o & seguido de lt <br> para o símbolo da esquerda e gt para o símbolo da direita</p>
-    <p>Na verdade essas abreviações são para: Maior que (Greather than) e menor que (Less Than)</p> 
-    <p>O uso do & auxilia na inserção de qualquer tipo de simbolo e emoji. Importante ressaltar que ao final do comando dever constar o ; (ponto e vírgula). Exemplos:</p>
-    <!-- o comando "p" cria um parágrafo, o comando "h1" cria um título, o comando "hr" produz na pagina uma linha horizontal e o comando "br" faz uma quebra de linha -->
-    <p>&reg; &copy;; &trade; &euro; &dollar; &Delta;</p>
-    <P> Vamos adicionar alguns emojis com base no site emojipedia usando o código hexadecimal; <br> <!-- a inserção de emojis e símbolos são antecipadas pelo "e" comercial. No caso dos emojis o xh representaria o sistema hexadecimal-->
-        &#x1F680;
-        &#x1F311;
-        &#x1F30E;
-        &#x1F30C;
-        &#x1F310;
-        &#x1F6F0;
-        &#xFE0F;
-    </P>
-    <hr>
-    <h1>Usando links</h1>
-    <hr>
-    <h2>Links externos</h2>
-    <p>Para lidar com links externos usamos a tag a e inserindo a url em href, com ela também podemos associar os comandos<code> target ="_blank" e rel= "external" </code> para fazer com que o link acesse outra página</p>
-    <p>Exemplo <a href="https://github.com/Giron-jpg" target="_blank" rel="external">Github</a></p>
-    <h2>Links internos</h2>
-    <p>Para inserir links internos também utilizamos o tag a "âncora", porém damos preferência a usar a mesma página</p>
-    <h2>Links para download</h2>
-    <p>Segue link para download teste do meu currículo por meio da tag a, com o parâmetro download e o type (o tipo é encontrado através do site iana.org): <a href="teste/curriculo.pdf" download="curriculo.pdf" type="application/pdf">currículo</a></p>
-    <p>Para arquivo em zip usariamos no parametro download o nome do arquivo e no type "application/zip"</p>
-
-    <h2>Estilos CSS</h2>
-    <p>Existem 3 tipos de configurações para inserir estilos em uma página CSS. São eles:</p>
-    <ul type="square">
-        <li>Estilo inline: é inserido na mesma linha em que se destaca uma tag html.</li>
-        <li>Estilo Interno: é inserido no cabeçalho da página (head). </li>
-        <li>Estilo Externo: cria-se um arquivo de estilo css</li>
-    </ul>
+            <h2>Estilos CSS</h2>
+            <p>Existem 3 tipos de configurações para inserir estilos em uma página CSS. São eles:</p>
+            <ul type="square">
+                <li>Estilo inline: é inserido na mesma linha em que se destaca uma tag html.</li>
+                <li>Estilo Interno: é inserido no cabeçalho da página (head). </li>
+                <li>Estilo Externo: cria-se um arquivo de estilo css</li>
+            </ul>
+            <a href="#">🔺</a>
+        </article>
+    </section>
+  
 
 </body>
 </html>
