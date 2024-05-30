@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/plantinha.ico" type="image/x-icon">
-    <title>Meu primeiro exercício</title>
     <link rel="stylesheet" href="style.css">
     <title>Formatação</title>
 </head>
@@ -21,53 +20,60 @@
             <li><a href="desafios.html">Desafios</a></li>
         </ul>
     </nav>
-    <h2>Negrito</h2>
-    <h3>Tag b</h3>
-    <p>Para usar negrito usamos a tag b em <b>uma frase importante</b>. <br>
-    </p>
-    <h3>Tag Strong</h3>
-    <p>
-    Também podemos colocar em negrito através do comando <strong>STRONG</strong> porém com essa tag damos um <strong>significado mais forte e não penas na Formatação</strong> <br></p>
-
-    <h2>Italico</h2>
-    <h3>Usando tag i</h3>
-    <p><i>Esse parágrafo usa a tag i para deixar em itálico</i></p>
-    <h3>Usando a tag em</h3>
-    <p>A tag "em" também destaca em italico uma <em>frase importante</em></p>
-    <h2>Texto marcado</h2>
-    <h3>Tag Mark</h3>
-    <p>Quando quiser <mark>marcar o texto</mark> podemos destacar com a tag mark que normalmente é amarelo porém no cabeçalho eu fiz a alteração para verde de toda marcação que encontrarmos.
-    <br>
-    <mark style="background-color: aqua;">Este outro texto foi marcado com cor diferente usando a tag mark com style</mark></p>
-    <h2>Letras pequenas grandes e pequenas</h2>
-    <p>É possível usar a tag big e small pra deixar <big>textos grandes</big> <small>e pequenos</small>, porém o big não é mais comum ser usado</p>
-    <h2>Texto riscado</h2>
-    <p>Podemos usar a tag del para considerar um <del>texto excluído</del></p>
-    <h2>Texto Inserido (Sublinhado)</h2>
-    <h3>Tag ins</h3>
-    <p>Podemos usar a tag para dizer que <ins>um texto foi inserido</ins></p>
-    <h3>Tag u</h3>
-    <p>Provavelmente entrará em desuso para marcar <u>texto sublinhado</u></p>
-    <h2>Texto sobrescrito e subescrito</h2>
-    <h3>Texto sobrescrito</h3>
-    <p>Podemos sobrescrever um texto (colocar na potência) utilizando a tag sup: 1 Byte = 2<sup>8</sup></p>
-    <h3>Texto subescrito</h3>
-    <p>Usado com a tag sup para subescrever um texto. Ex.: H<sub>2</sub>O (no caso o numero 2 apenas)</p>
-    <h2>Citações ""</h2>
-    <p><q>Este texto é em referencia ao material disposto pelo github do guanabara</q> Quando usamos a tag q para inserir aspas o conteudo passa a ter significado.</p>
-    <p>Outra citação é com a tag blockquote que reserva uma parte para citar.</p>
-    <blockquote cite="se quiser da pra inserir uma url para aparecer no google como referenciado, para manter os direitos autorais"><q>Alguem disse algo uma vez quando eu li</q></blockquote>
-
-    <h2>Fonte Monoespaçada</h2>
-    <p>Usamos a tag code para fazer um <code>texto.ficar.mono.espaçado</code> porém ele perde a identação quando vc for tentar escrever linhas de comando, sendo assim usamos a tag pre. Exemplo:
-    <pre><code>
-num = int(input('Digite um valor: '))
-if (num % 2) == 0:
-    print('O número é par')
-else:
-    print('É ímpar')
-    </code></pre></p>
-    <h2>Envelopando (Abreviações)</h2>
-    <p>Usamos a tag abbr para inserir uma marcação para abreviar algo. Ex.: <abbr title="Condições Normais de Temperatura e Pressão">CNTP</abbr></p>
+    <div class="row">
+        <section>
+            <article class="card">
+                <h2>Negrito</h2>
+                <h3>Tag b</h3>
+                <p>Para usar negrito usamos a tag b em <b>uma frase importante</b>. <br>
+                </p>
+                <h3>Tag Strong</h3>
+                <p>
+                Também podemos colocar em negrito através do comando <strong>STRONG</strong> porém com essa tag damos um <strong>significado mais forte e não penas na Formatação</strong> <br></p>
+                <h2>Italico</h2>
+                <h3>Usando tag i</h3>
+                <p><i>Esse parágrafo usa a tag i para deixar em itálico</i></p>
+                <h3>Usando a tag em</h3>
+                <p>A tag "em" também destaca em italico uma <em>frase importante</em></p>
+                <h2>Texto marcado</h2>
+                <h3>Tag Mark</h3>
+                <p>Quando quiser <mark>marcar o texto</mark> podemos destacar com a tag mark que normalmente é amarelo porém no cabeçalho eu fiz a alteração para verde de toda marcação que encontrarmos.
+                <br>
+                <mark style="background-color: aqua;">Este outro texto foi marcado com cor diferente usando a tag mark com style</mark></p>
+                <h2>Letras pequenas grandes e pequenas</h2>
+                <p>É possível usar a tag big e small pra deixar <big>textos grandes</big> <small>e pequenos</small>, porém o big não é mais comum ser usado</p>
+                <h2>Texto riscado</h2>
+                <p>Podemos usar a tag del para considerar um <del>texto excluído</del></p>
+                <h2>Texto Inserido (Sublinhado)</h2>
+                <h3>Tag ins</h3>
+                <p>Podemos usar a tag para dizer que <ins>um texto foi inserido</ins></p>
+                <h3>Tag u</h3>
+                <p>Provavelmente entrará em desuso para marcar <u>texto sublinhado</u></p>
+                <h2>Texto sobrescrito e subescrito</h2>
+                <h3>Texto sobrescrito</h3>
+                <p>Podemos sobrescrever um texto (colocar na potência) utilizando a tag sup: 1 Byte = 2<sup>8</sup></p>
+                <h3>Texto subescrito</h3>
+                <p>Usado com a tag sup para subescrever um texto. Ex.: H<sub>2</sub>O (no caso o numero 2 apenas)</p>
+                <h2>Citações ""</h2>
+                <p><q>Este texto é em referencia ao material disposto pelo github do guanabara</q> Quando usamos a tag q para inserir aspas o conteudo passa a ter significado.</p>
+                <p>Outra citação é com a tag blockquote que reserva uma parte para citar.</p>
+                <blockquote cite="se quiser da pra inserir uma url para aparecer no google como referenciado, para manter os direitos autorais"><q>Alguem disse algo uma vez quando eu li</q></blockquote>
+                <h2>Fonte Monoespaçada</h2>
+                <p>Usamos a tag code para fazer um <code>texto.ficar.mono.espaçado</code> porém ele perde a identação quando vc for tentar escrever linhas de comando, sendo assim usamos a tag pre. Exemplo:
+                <pre><code>
+    num = int(input('Digite um valor: '))
+    if (num % 2) == 0:
+        print('O número é par')
+    else:
+        print('É ímpar')
+                </code></pre></p>
+                <h2>Envelopando (Abreviações)</h2>
+                <p>Usamos a tag abbr para inserir uma marcação para abreviar algo. Ex.: <abbr title="Condições Normais de Temperatura e Pressão">CNTP</abbr></p>
+            </article>
+        </section>
+        <aside>
+            Menu lateral
+        </aside>
+    </div>
 </body>
 </html>
