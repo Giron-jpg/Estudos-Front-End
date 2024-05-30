@@ -38,11 +38,9 @@ nav a:hover{
 .row{
     padding: 0 20px; /*primeiro valor para cima e baixo e segundo esquerda e direita*/
     width: 60%;
-    display: t;
+    display: table;
 }
-aside{
-    float: left;
-}
+
 .card{
     background-color: white;
     padding: 4px 10px;
@@ -57,7 +55,11 @@ article div{
     padding: 20px;
     border-radius: 5px;
     box-shadow: 4px 4px 10px #012030;
-
+}
+.main{
+    float: left;
+    background-color: white;
+    padding: 20px;
 }
 
 p{
