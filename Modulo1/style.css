@@ -1,19 +1,11 @@
 @charset "UTF-8";
-*{
-    box-sizing: border-box;
-}
+
 header{
     background-color: #13678A;
     color: #DAFDBA;
 
     text-align: center;
     padding: 30px;
-}
-body{
-    background-color: beige;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    margin: 0;
 }
 nav ul{
     background-color: #012030;
@@ -22,19 +14,27 @@ nav ul{
     margin: 0;
     padding: 0;
 }
+nav li {
+    float: left;
+}
 nav a{
     text-decoration: none; /*Tira configurações de texto*/
     color: white;
     padding:  16px;
     display: block; /*Configura o formato da palavra como caixa*/
 }
-nav li {
-    float: left;
-}
+
 nav a:hover{
     background-color: white;
     color: #13678A;
 }
+body{
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
 .row{
     padding: 0 20px; /*primeiro valor para cima e baixo e segundo esquerda e direita*/
     width: 60%;
