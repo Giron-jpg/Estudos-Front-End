@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <style>
         @font-face {
-            font-family: ;
+            font-family: 'Sen';
             src: url(fontes/Sen/Sen-VariableFont_wght.ttf) format('truetype');
             font-weight: normal;
             font-style: normal;
@@ -20,7 +21,7 @@
         */
 
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-        *{
+        h1, h2{
             font-family: 'Roboto Condensed', sans-serif;
         }
         p{
@@ -33,6 +34,29 @@
 <body>
     <h1>Fontes externas</h1>
     <h2>Importando fontes por meio de links</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aliquid vitae culpa. Non commodi sequi repudiandae dicta id incidunt totam saepe obcaecati, pariatur tempore rerum nulla eligendi, esse cum quaerat?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aliquid vitae culpa. Non commodi sequi repudiandae dicta id incidunt totam saepe obcaecati, pariatur tempore rerum nulla eligendi, esse cum quaerat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolores dolorem quis quasi, voluptate sequi dolorum accusantium quas adipisci quaerat quidem similique libero veniam doloremque laboriosam quos voluptatem nostrum provident!</p>
+    <h2>Classes e identidades (Seletores Personalizados)</h2>
+    <p>Identidades são definidas a partir do parametro id e são acessadas no css por meio da hashtag #nome; elas são utilizadas como para uma única tag. Já as classes  podem ser utilizadas por várias tags e são acessadas no css por meio de .nome </p>
+    <h2>Pseudo Classes</h2>
+    <p>Pseudo classes são usadas para mudança de estado e estão diretamente ligadas a tags já usadas. Para categorizar uma pseudoclasse usamos tag:ação</p>
+    <dl>
+        <dt>Hover</dt>
+        <dd>Faz algo quando o mouse esta por cima</dd>
+        <dt>visited</dt>
+        <dd>Links já visitados</dd>
+        <dt>Active</dt>
+        <dd>Quando clicado</dd>
+    </dl>
+    <div class="teste"></div>
+    <h2>Pseudo Elementos</h2>
+    <p>
+        Os pseudo elementos são referenciados em css por meio de duplo dois pontos (::), onde organizamos: nome::parametro.
+    </p>
+    <dl>
+        <dt>After</dt>
+        <dd>É um parâmetro usado para inserir algo após o um conteúdo</dd>
+    </dl>
+    <h2>Classe filha</h2>
+    <p>Para associar elementos css a uma classe filha pertencente a uma classe pai utilizamos o símbolo maior que</p>
 </body>
 </html>

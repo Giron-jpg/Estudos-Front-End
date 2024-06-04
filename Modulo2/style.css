@@ -6,6 +6,7 @@
 body{
     background-image: linear-gradient(-45deg, #E0B936, #E04F36);
     background-attachment: fixed;
+    margin: 0;
 }
 main{
     background-color: white;
@@ -24,4 +25,27 @@ h1{
 
 p{
     text-align: justify;
+}
+
+.teste{
+    margin: auto;
+    text-align: center;
+    padding: 16px;
+    width: 75px;
+    height: 75px;
+    border: 5px solid black;
+    background-color: grey;
+}
+
+.teste:hover{
+    background-color: #E0B936;
+    color: white;
+}
+
+.teste:active{
+    background-color: green;
+}
+
+div::after{
+    content: "Olá mundo";
 }
