@@ -8,14 +8,17 @@ body{
     background-attachment: fixed;
     margin: 0;
 }
-main{
+main {
+    border: 14px solid black; /*A borda só passa a existir se houver especificação de uma borda (a cor pode ser substituida por transparent)*/
+    margin: 75px auto;
     background-color: white;
-    border-radius: 10px;
+    border-image-source: url(fontes/bordanova.png);
+    border-image-slice: 23;
+    border-image-repeat: repeat;
     box-shadow: 5px 5px 15px gray;
-    width: 600px;
+    width: 575px;
     padding: 10px;
-    margin: auto;
-
+    /*Podemos usar o parâmetro para shorthand boder-image para substituir vários dos comandos, assim os valores devem ser inseridos na sequência de source, slice e repeat*/
 }
 
 h1{
