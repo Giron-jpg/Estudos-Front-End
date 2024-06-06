@@ -76,4 +76,7 @@ section p{
 
 }
 
-
+section picture{
+    display: flex;
+    justify-content: center;
+}
