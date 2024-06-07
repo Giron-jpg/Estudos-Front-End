@@ -11,7 +11,7 @@
     --cor1: lightgray;
     --cor2: gray;
     --cor3: #84E1AD;
-    --cor4: #3cd883;
+    --cor4: #35a768;
     --cor5: #1A5C38;
 
     --font-padrao: Arial, Verdana, Helvetica, sans-serif;
@@ -83,12 +83,25 @@ h3{
 
 section p{
     text-align: justify;
-    padding: 10px 0 0 0;
+    padding: 10px 0 10px 0;
     text-indent: 30px;
-
 }
 
 section picture{
     display: flex;
     justify-content: center;
+}
+
+aside{
+    background-color: var(--cor4);
+    border-radius: 1px 10px 1px 10px;
+}
+aside h2{
+    padding: 10px;
+}
+aside p {
+    text-align: justify;
+    padding: 10px 0 10px 0;
+    margin: 0px 10px;
+    text-indent: 30px;
 }
