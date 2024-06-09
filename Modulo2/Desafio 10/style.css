@@ -98,7 +98,7 @@ img{
 img.pequena{
     display: block;
     margin: auto;
-    width: 50%;
+    max-width: 330px;
 
 }
 div{
@@ -116,6 +116,7 @@ aside{
 }
 aside h2{
     padding: 10px;
+    
 }
 aside p {
     text-align: justify;
