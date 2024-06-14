@@ -36,7 +36,10 @@
     </p>
 
     <h2>Posicionamento</h2>
-    <p>Para posicionar imagens alinhadas verticalmente dentro de um container precisamos usar o parâmetro position tanto no conteúdo como no container. No container usamos posicionamento relativo, e no conteúdo usamos o absoluto.</p>
+    <p>Para posicionar imagens alinhadas verticalmente dentro de um container precisamos usar o parâmetro position tanto no conteúdo como no container. No container usamos posicionamento relativo (por padrão todo posicionamento de uma box é relativo), e no conteúdo usamos o absoluto.</p>
+    <p>Ao acrescentar o parâmetro absoluto é possível usar parâmetros como top e left para indicar a distância entre entre o topo e a esquerda do container. Porém, é importante lembrar que a posição será com o referencial na âncora da imagem que por padrão é o no canto superior esquerdo.<br>
+    <strong>OBS.:</strong> Para centralizar o conteúdo no container por meio do posicionamento relativo utilizamos o parâmetro <em>transform</em> que é capaz de transformar a ancoragem da imagem de diferentes modos.
+    </p>
     <section id="container">
         <article id="conteudo">
 
