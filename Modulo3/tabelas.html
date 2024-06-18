@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+    border-collapse: collapse;
+    width: 400px;    
+    }
+    td{
+    border: 1px solid black;
+    }
+    </style>
     <title>Tabelas</title>
 </head>
 <body>
-    
+    <h1>Criando Tabelas</h1>
+    <p>Utilizamos tabelas em html para apresentação de dados, porém antigamente esses modelos já foram utilizados para construção de sites (não mais recomendado). Para criar uma tabela em HTML usamos a tag <em>table</em> e dentro dela devemos seguir uma hierarquia exemplificada a seguir.</p>
+    <pre>
+        Hierarquia de Tabelas (simples)
+        TABLE = tabela
+            TABLE ROW (tag tr)= Linha da tabela
+            TABLE HEADER = Cabeçalho da tabela
+            TABLE DATA (tag td)= Dados de tabela
+    </pre>
+    <p>Sendo assim usou-se as seguintes tags mencionadas para elaborar uma tabela 3x3</p>
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>A2</td>
+            <td>A3</td>
+        </tr>
+        <tr>
+            <td>B1</td>
+            <td>B2</td>
+            <td>B3</td>
+        </tr>
+        <tr>
+            <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+        </tr>
+    </table>
+    <p>Para configurar seu formato usa-se comandos CSS como: border para atribuir linhas aos elementos; <em>border-collapse</em> que por padrão vem como separete, mas mudando para collapse todos os dados se agrupam</p>
 </body>
 </html>
