@@ -10,6 +10,10 @@
     table{
     border-collapse: collapse;
     width: 400px;    
+    background-color: lightgray;
+    }
+    tr.linha1{
+        background-color: gray;
     }
     td{
     border: 1px solid black;
@@ -24,12 +28,12 @@
         Hierarquia de Tabelas (simples)
         TABLE = tabela
             TABLE ROW (tag tr)= Linha da tabela
-            TABLE HEADER = Cabeçalho da tabela
+            TABLE HEADER (tag th)= Cabeçalho da tabela
             TABLE DATA (tag td)= Dados de tabela
     </pre>
     <p>Sendo assim usou-se as seguintes tags mencionadas para elaborar uma tabela 3x3</p>
     <table>
-        <tr>
+        <tr class="linha1">
             <td>A1</td>
             <td>A2</td>
             <td>A3</td>
