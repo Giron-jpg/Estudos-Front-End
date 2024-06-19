@@ -16,11 +16,14 @@
     tr.linha1{
         background-color: gray;
     }
-    td{
+    td,th{
     padding: 12px;
     border: 1px solid black;
     text-align: center; /*Alinhamento horizontal*/
     vertical-align: middle;
+    }
+    thead, tfoot{
+        background-color: gray;
     }
     </style>
     <title>Tabelas</title>
@@ -34,6 +37,7 @@
             TABLE HEADER (tag thead)= Cabeçalho da tabela
             TABLE BODY (tag tbody)= corpo da tabela
             TABLE FOOT (tag tfoot)= corpo da tabela
+            TABLE HEAD (tag th)= Dados da primeira linha da tabela
             TABLE ROW (tag tr)= Linha da tabela
             TABLE DATA (tag td)= Dados de tabela
     </pre>
@@ -55,6 +59,64 @@
             <td>C3</td>
         </tr>
     </table>
-    <p>Para configurar seu formato usa-se comandos CSS como: border para atribuir linhas aos elementos; <em>border-collapse</em> que por padrão vem como separete, mas mudando para collapse todos os dados se agrupam, entre outros. É preciso levar em consideração qual parte da tabela vai levar </p>
+    <p>Para configurar seu formato usa-se comandos CSS como: border para atribuir linhas aos elementos; <em>border-collapse</em> que por padrão vem como separete, mas mudando para collapse todos os dados se agrupam, entre outros. É preciso levar em consideração qual parte da tabela deve ser formatada se são as linhas ou dados.</p>
+    <p><b>OBS.:</b> Por padrão o th vem como negrito e centralizado</p>
+    <h2>Teste de tabela</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>32.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14.873.054</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>11.433.957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>11.377.239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>9.557.071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>9.132.078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>8.602.865</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>7.164.788</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td><strong>133.037.033</strong></td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
