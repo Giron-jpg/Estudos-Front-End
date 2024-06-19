@@ -22,6 +22,9 @@
     text-align: center; /*Alinhamento horizontal*/
     vertical-align: middle;
     }
+    tr:nth-child(2n){
+        background-color: #fff;
+    }
     thead, tfoot{
         background-color: gray;
     }
@@ -34,15 +37,17 @@
     <pre>
         Hierarquia de Tabelas (simples)
         TABLE = tabela
+            CAPTION = Título da tabela
             TABLE HEADER (tag thead)= Cabeçalho da tabela
             TABLE BODY (tag tbody)= corpo da tabela
-            TABLE FOOT (tag tfoot)= corpo da tabela
-            TABLE HEAD (tag th)= Dados da primeira linha da tabela
+            TABLE FOOT (tag tfoot)= pé da tabela
+            TABLE HEAD (tag th)= Título para a linha ou coluna da tabela
             TABLE ROW (tag tr)= Linha da tabela
             TABLE DATA (tag td)= Dados de tabela
     </pre>
     <p>Sendo assim usou-se as seguintes tags mencionadas para elaborar uma tabela 3x3</p>
     <table>
+        <caption>teste</caption>
         <tr class="linha1">
             <td>A1</td>
             <td>A2</td>
@@ -61,12 +66,13 @@
     </table>
     <p>Para configurar seu formato usa-se comandos CSS como: border para atribuir linhas aos elementos; <em>border-collapse</em> que por padrão vem como separete, mas mudando para collapse todos os dados se agrupam, entre outros. É preciso levar em consideração qual parte da tabela deve ser formatada se são as linhas ou dados.</p>
     <p><b>OBS.:</b> Por padrão o th vem como negrito e centralizado</p>
+    <p><strong>Importante:</strong> ao inserir um th é necessário acrescentar o parâmetro scope e informar no seu valor a direção em que se segue o conteúdo do título daquela coluna (ex.: scope="col" se o dado ficar na mesma coluna)</p>
     <h2>Teste de tabela</h2>
     <table>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -113,10 +119,12 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>133.037.033</strong></td>
             </tr>
         </tfoot>
     </table>
+    <h2>Efeito Zebrado</h2>
+    <p>Para criar o efeito zebrado utilizamos a pseudo classe nth-child(2n) que permite a implementação de algum parâmetro em classes filhas de 2 em 2 elementos. O valor dentro do parênteses indica o padrão para as classes filhas podendo ser numérico, impar (odd ou 2n-1) ou par (even ou 2n). Nesse caso ele foi aplicado sobre as linhas (tr).</p>
 </body>
 </html>
