@@ -133,5 +133,26 @@
     </table>
     <h2>Efeito Zebrado</h2>
     <p>Para criar o efeito zebrado utilizamos a pseudo classe nth-child(2n) que permite a implementação de algum parâmetro em classes filhas de 2 em 2 elementos. O valor dentro do parênteses indica o padrão para as classes filhas podendo ser numérico, impar (odd ou 2n-1) ou par (even ou 2n). Nesse caso ele foi aplicado sobre as linhas (tr).</p>
+
+    <h2>Mesclagem de Celula</h2>
+    <p>Para mesclar celulas não é necessário comandos css, apenas acrescentar parâmetros a linha ou dado que se pretende mesclar. Podemos mesclar celulas na horizontal (pormeio do parametro colspan) e na vertical (através do comando rowspan)</p>
+
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+        </tr>
+        <tr>
+            <td rowspan="3">C</td>
+            <td>D</td>
+            <td rowspan="2">E</td>
+        </tr>
+        <tr>
+            <td>G</td>
+        </tr>
+        <tr>
+            <td colspan="2">J</td>
+        </tr>
+    </table>
 </body>
 </html>
