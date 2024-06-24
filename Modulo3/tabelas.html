@@ -39,230 +39,285 @@
     <title>Tabelas</title>
 </head>
 <body>
-    <h1>Criando Tabelas</h1>
-    <p>Utilizamos tabelas em html para apresentação de dados, porém antigamente esses modelos já foram utilizados para construção de sites (não mais recomendado). Para criar uma tabela em HTML usamos a tag <em>table</em> e dentro dela devemos seguir uma hierarquia exemplificada a seguir.</p>
-    <pre>
-        Hierarquia de Tabelas (simples)
-        TABLE = tabela
-            CAPTION = Título da tabela
-            TABLE HEADER (tag thead)= Cabeçalho da tabela
-            TABLE BODY (tag tbody)= corpo da tabela
-            TABLE FOOT (tag tfoot)= pé da tabela
-            TABLE HEAD (tag th)= Título para a linha ou coluna da tabela
-            TABLE ROW (tag tr)= Linha da tabela
-            TABLE DATA (tag td)= Dados de tabela
-    </pre>
-    <p>Sendo assim usou-se as seguintes tags mencionadas para elaborar uma tabela 3x3</p>
-    <table>
-        <caption>teste</caption>
-        <tr class="linha1">
-            <td>A1</td>
-            <td>A2</td>
-            <td>A3</td>
-        </tr>
-        <tr>
-            <td>B1</td>
-            <td>B2</td>
-            <td>B3</td>
-        </tr>
-        <tr>
-            <td>C1</td>
-            <td>C2</td>
-            <td>C3</td>
-        </tr>
-    </table>
-    <p>Para configurar seu formato usa-se comandos CSS como: border para atribuir linhas aos elementos; <em>border-collapse</em> que por padrão vem como separete, mas mudando para collapse todos os dados se agrupam, entre outros. É preciso levar em consideração qual parte da tabela deve ser formatada se são as linhas ou dados.</p>
-    <p><b>OBS.:</b> Por padrão o th vem como negrito e centralizado</p>
-    <p><strong>Importante:</strong> ao inserir um th é necessário acrescentar o parâmetro scope e informar no seu valor a direção em que se segue o conteúdo do título daquela coluna (ex.: scope="col" se o dado ficar na mesma coluna). Caso os dados ocupem varias colunas ou linhas usamos colgroup ou rowgroup</p>
-    <h2>Teste de tabela</h2>
-    <table>
-        <thead>
-            <tr>
-                <th scope="col">Estado</th>
-                <th scope="col">População</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>São Paulo</td>
-                <td>45.919.049</td>
+    <section>
+        <h1>Criando Tabelas</h1>
+        <p>Utilizamos tabelas em html para apresentação de dados, porém antigamente esses modelos já foram utilizados para construção de sites (não mais recomendado). Para criar uma tabela em HTML usamos a tag <em>table</em> e dentro dela devemos seguir uma hierarquia exemplificada a seguir.</p>
+        <pre>
+            Hierarquia de Tabelas (simples)
+            TABLE = tabela
+                CAPTION = Título da tabela
+                TABLE HEADER (tag thead)= Cabeçalho da tabela
+                TABLE BODY (tag tbody)= corpo da tabela
+                TABLE FOOT (tag tfoot)= pé da tabela
+                TABLE HEAD (tag th)= Título para a linha ou coluna da tabela
+                TABLE ROW (tag tr)= Linha da tabela
+                TABLE DATA (tag td)= Dados de tabela
+        </pre>
+        <p>Sendo assim usou-se as seguintes tags mencionadas para elaborar uma tabela 3x3</p>
+        <table>
+            <caption>teste</caption>
+            <tr class="linha1">
+                <td>A1</td>
+                <td>A2</td>
+                <td>A3</td>
             </tr>
             <tr>
-                <td>Minas Gerais</td>
-                <td>32.168.791</td>
+                <td>B1</td>
+                <td>B2</td>
+                <td>B3</td>
             </tr>
             <tr>
-                <td>Rio de Janeiro</td>
-                <td>17.264.943</td>
+                <td>C1</td>
+                <td>C2</td>
+                <td>C3</td>
+            </tr>
+        </table>
+        <p>Para configurar seu formato usa-se comandos CSS como: border para atribuir linhas aos elementos; <em>border-collapse</em> que por padrão vem como separete, mas mudando para collapse todos os dados se agrupam, entre outros. É preciso levar em consideração qual parte da tabela deve ser formatada se são as linhas ou dados.</p>
+        <p><b>OBS.:</b> Por padrão o th vem como negrito e centralizado</p>
+        <p><strong>Importante:</strong> ao inserir um th é necessário acrescentar o parâmetro scope e informar no seu valor a direção em que se segue o conteúdo do título daquela coluna (ex.: scope="col" se o dado ficar na mesma coluna). Caso os dados ocupem varias colunas ou linhas usamos colgroup ou rowgroup</p>
+    </section>
+    <section>
+        <h2>Teste de tabela</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>45.919.049</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>32.168.791</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td>17.264.943</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td>14.873.054</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td>11.433.957</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td>11.377.239</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td>9.557.071</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td>9.132.078</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td>8.602.865</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td>7.164.788</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total de Habitantes</th>
+                    <td><strong>133.037.033</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+        <h2>Efeito Zebrado</h2>
+        <p>Para criar o efeito zebrado utilizamos a pseudo classe nth-child(2n) que permite a implementação de algum parâmetro em classes filhas de 2 em 2 elementos. O valor dentro do parênteses indica o padrão para as classes filhas podendo ser numérico, impar (odd ou 2n-1) ou par (even ou 2n). Nesse caso ele foi aplicado sobre as linhas (tr).</p>
+        <h2>Mesclagem de Celula</h2>
+        <p>Para mesclar celulas não é necessário comandos css, apenas acrescentar parâmetros a linha ou dado que se pretende mesclar. Podemos mesclar celulas na horizontal (pormeio do parametro colspan) e na vertical (através do comando rowspan)</p>
+        <table>
+            <tr>
+                <td>A</td>
+                <td colspan="2">B</td>
             </tr>
             <tr>
-                <td>Bahia</td>
-                <td>14.873.054</td>
+                <td rowspan="3">C</td>
+                <td>D</td>
+                <td rowspan="2">E</td>
             </tr>
             <tr>
-                <td>Paraná</td>
-                <td>11.433.957</td>
+                <td>G</td>
             </tr>
             <tr>
-                <td>Rio Grande do Sul</td>
-                <td>11.377.239</td>
+                <td colspan="2">J</td>
             </tr>
-            <tr>
-                <td>Pernambuco</td>
-                <td>9.557.071</td>
-            </tr>
-            <tr>
-                <td>Ceará</td>
-                <td>9.132.078</td>
-            </tr>
-            <tr>
-                <td>Pará</td>
-                <td>8.602.865</td>
-            </tr>
-            <tr>
-                <td>Santa Catarina</td>
-                <td>7.164.788</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th scope="row">Total de Habitantes</th>
-                <td><strong>133.037.033</strong></td>
-            </tr>
-        </tfoot>
-    </table>
-    <h2>Efeito Zebrado</h2>
-    <p>Para criar o efeito zebrado utilizamos a pseudo classe nth-child(2n) que permite a implementação de algum parâmetro em classes filhas de 2 em 2 elementos. O valor dentro do parênteses indica o padrão para as classes filhas podendo ser numérico, impar (odd ou 2n-1) ou par (even ou 2n). Nesse caso ele foi aplicado sobre as linhas (tr).</p>
-
-    <h2>Mesclagem de Celula</h2>
-    <p>Para mesclar celulas não é necessário comandos css, apenas acrescentar parâmetros a linha ou dado que se pretende mesclar. Podemos mesclar celulas na horizontal (pormeio do parametro colspan) e na vertical (através do comando rowspan)</p>
-
-    <table>
-        <tr>
-            <td>A</td>
-            <td colspan="2">B</td>
-        </tr>
-        <tr>
-            <td rowspan="3">C</td>
-            <td>D</td>
-            <td rowspan="2">E</td>
-        </tr>
-        <tr>
-            <td>G</td>
-        </tr>
-        <tr>
-            <td colspan="2">J</td>
-        </tr>
-    </table>
+        </table>
+    </section>
 
     <h2>Desafios</h2>
-    <h3>Desafio 1</h3>
-    <table>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td rowspan="2">3</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-        </tr>
-        <tr>
-            <td colspan="3">8</td>
-            <td>9</td>
-        </tr>
-        <tr>
-            <td rowspan="2">10</td>
-            <td colspan="2">11</td>
-            <td>12</td>
-        </tr>
-        <tr>
-            <td>13</td>
-            <td>14</td>
-            <td>15</td>
-        </tr>
-    </table>
+    <section>
+        <h3>Desafio 1</h3>
+        <table>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="2">3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td colspan="3">8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td rowspan="2">10</td>
+                <td colspan="2">11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+    
+        <h3>Desafio 2</h3>
+        <table>
+            <tr>
+                <td colspan="4">A</td>
+                <td rowspan="4">B</td>
+            </tr>
+            <tr>
+                <td rowspan="4">C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+    
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+    
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>L</td>
+                <td>M</td>
+    
+            </tr>
+            <tr>
+                <td colspan="4">N</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <h3>Desafio 3</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Grupo</th>
+                    <th scope="col">Nome</th>
+                    <th colspan="3" scope="colgroup">Filmes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Mulheres</th>
+                    <td>Ana</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td>Vingadores</td>
+                </tr>
+                <tr>
+                    <td>Bea</td>
+                    <td>Hulk</td>
+                    <td>Inception</td>
+                    <td>Batman</td>
+                </tr>
+                <tr>
+                    <td>Cláudia</td>
+                    <td>Oblivion</td>
+                    <td>Matrix</td>
+                    <td>Big Hero</td>
+                </tr>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Homens</th>
+                    <td>Bruno</td>
+                    <td>Incontáveis</td>
+                    <td>Amnésia</td>
+                    <td>Gladiador</td>
+                </tr>
+                <tr>
+                    <td>Daniel</td>
+                    <td>Wall-E</td>
+                    <td>Oldboy</td>
+                    <td>Dangal</td>
+                </tr>
+                <tr>
+                    <td>Fabiano</td>
+                    <td>Star Wars</td>
+                    <td>Taxi Driver</td>
+                    <td>Toy Story</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h3>Desafio 4</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="col">Área</th>
+                    <th rowspan="2" scope="col">Disciplinas</th>
+                    <th colspan="2" scope="colgroup">Notas</th>
+                    <th rowspan="2" scope="col">Média</th>
+                </tr>
+                <tr>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="4">Exatas</th>
+                    <td>Matemática</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Física</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Química</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+            </tbody>
+            <tfoot>
 
-    <h3>Desafio 2</h3>
-    <table>
-        <tr>
-            <td colspan="4">A</td>
-            <td rowspan="4">B</td>
-        </tr>
-        <tr>
-            <td rowspan="4">C</td>
-            <td>D</td>
-            <td>E</td>
-            <td>F</td>
-
-        </tr>
-        <tr>
-            <td>G</td>
-            <td>H</td>
-            <td>I</td>
-
-        </tr>
-        <tr>
-            <td>J</td>
-            <td>L</td>
-            <td>M</td>
-
-        </tr>
-        <tr>
-            <td colspan="4">N</td>
-        </tr>
-    </table>
-    <h3>Desafio 3</h3>
-    <table>
-        <thead>
-            <tr>
-                <th scope="col">Grupo</th>
-                <th scope="col">Nome</th>
-                <th colspan="3" scope="colgroup">Filmes</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th rowspan="3" scope="rowgroup">Mulheres</th>
-                <td>Ana</td>
-                <td>Alien</td>
-                <td>Rambo</td>
-                <td>Vingadores</td>
-            </tr>
-            <tr>
-                <td>Bea</td>
-                <td>Hulk</td>
-                <td>Inception</td>
-                <td>Batman</td>
-            </tr>
-            <tr>
-                <td>Cláudia</td>
-                <td>Oblivion</td>
-                <td>Matrix</td>
-                <td>Big Hero</td>
-            </tr>
-            <tr>
-                <th rowspan="3" scope="rowgroup">Homens</th>
-                <td>Bruno</td>
-                <td>Incontáveis</td>
-                <td>Amnésia</td>
-                <td>Gladiador</td>
-            </tr>
-            <tr>
-                <td>Daniel</td>
-                <td>Wall-E</td>
-                <td>Oldboy</td>
-                <td>Dangal</td>
-            </tr>
-            <tr>
-                <td>Fabiano</td>
-                <td>Star Wars</td>
-                <td>Taxi Driver</td>
-                <td>Toy Story</td>
-            </tr>
-        </tbody>
-    </table>
+            </tfoot>
+        </table>
+    </section>
 </body>
 </html>
