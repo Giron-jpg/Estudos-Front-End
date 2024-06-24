@@ -18,7 +18,7 @@
         background-color: gray;
     }
     td,th{
-        padding: 12px;
+        padding: 6px 18px;
         border: 1px solid black;
         text-align: center; /*Alinhamento horizontal*/
         vertical-align: middle;
@@ -158,7 +158,7 @@
     </section>
 
     <h2>Desafios</h2>
-    <section>
+    <section id="D1">
         <h3>Desafio 1</h3>
         <table>
             <tr>
@@ -188,7 +188,7 @@
             </tr>
         </table>
     </section>
-    <section>
+    <section id="D2">
     
         <h3>Desafio 2</h3>
         <table>
@@ -220,7 +220,7 @@
             </tr>
         </table>
     </section>
-    <section>
+    <section id="D3">
         <h3>Desafio 3</h3>
         <table>
             <thead>
@@ -272,7 +272,7 @@
             </tbody>
         </table>
     </section>
-    <section>
+    <section id="D4">
         <h3>Desafio 4</h3>
         <table>
             <thead>
@@ -283,41 +283,60 @@
                     <th rowspan="2" scope="col">Média</th>
                 </tr>
                 <tr>
-                    <th>Nota 1</th>
-                    <th>Nota 2</th>
+                    <th scope="col">Nota1</th>
+                    <th scope="col">Nota2</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th rowspan="4">Exatas</th>
-                    <td>Matemática</td>
+                    <th rowspan="4" scope="rowgroup">Exatas</th>
+                    <th scope="row">Matemática</th>
                     <td>0.0</td>
                     <td>0.0</td>
                     <td>0.0</td>
                 </tr>
                 <tr>
-                    <td>Física</td>
+                    <th scope="row">Física</th>
                     <td>0.0</td>
                     <td>0.0</td>
                     <td>0.0</td>
                 </tr>
                 <tr>
-                    <td>Química</td>
+                    <th scope="row">Química</th>
                     <td>0.0</td>
                     <td>0.0</td>
                     <td>0.0</td>
                 </tr>
                 <tr>
-                    <td>Biologia</td>
+                    <th scope="row">Biologia</th>
                     <td>0.0</td>
                     <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th colspan="4" scope="row">Média</th>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" scope="rowgroup">Humanas</th>
+                    <th scope="row">História</th>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th scope="row">Geografia</th>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th colspan="4" scope="row">Média</th>
                     <td>0.0</td>
                 </tr>
             </tbody>
-            <tfoot>
-
-            </tfoot>
         </table>
     </section>
+    <section></section>
 </body>
 </html>
