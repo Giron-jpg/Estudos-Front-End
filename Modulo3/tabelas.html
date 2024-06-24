@@ -73,7 +73,7 @@
     </table>
     <p>Para configurar seu formato usa-se comandos CSS como: border para atribuir linhas aos elementos; <em>border-collapse</em> que por padrão vem como separete, mas mudando para collapse todos os dados se agrupam, entre outros. É preciso levar em consideração qual parte da tabela deve ser formatada se são as linhas ou dados.</p>
     <p><b>OBS.:</b> Por padrão o th vem como negrito e centralizado</p>
-    <p><strong>Importante:</strong> ao inserir um th é necessário acrescentar o parâmetro scope e informar no seu valor a direção em que se segue o conteúdo do título daquela coluna (ex.: scope="col" se o dado ficar na mesma coluna)</p>
+    <p><strong>Importante:</strong> ao inserir um th é necessário acrescentar o parâmetro scope e informar no seu valor a direção em que se segue o conteúdo do título daquela coluna (ex.: scope="col" se o dado ficar na mesma coluna). Caso os dados ocupem varias colunas ou linhas usamos colgroup ou rowgroup</p>
     <h2>Teste de tabela</h2>
     <table>
         <thead>
@@ -218,14 +218,14 @@
     <table>
         <thead>
             <tr>
-                <th>Grupo</th>
-                <th>Nome</th>
-                <th colspan="3">Filmes</th>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nome</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
                 <td>Ana</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -244,7 +244,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <th rowspan="3">Homens</th>
+                <th rowspan="3" scope="rowgroup">Homens</th>
                 <td>Bruno</td>
                 <td>Incontáveis</td>
                 <td>Amnésia</td>
