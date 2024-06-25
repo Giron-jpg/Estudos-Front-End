@@ -13,5 +13,14 @@
             <input type="submit" value="Cadastrar">
         </p>
     </form>
+    <a href="#" onclick="clicou()">Clique em mim</a>
+    <div id="saida"></div>
+
+    <script>
+        function clicou(){
+            s = window.document.getElementById("saida")
+            s.innerHTML += '<p>Você Clicou</p>'
+        }
+    </script>
 </body>
 </html>
