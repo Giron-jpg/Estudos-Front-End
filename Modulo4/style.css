@@ -1,0 +1,17 @@
+body{
+    background-color: beige;
+}
+section{
+    background-color: white;
+    padding: 12px;
+    width: 600px;
+    text-align: justify;
+    margin: auto;
+}
+iframe{
+    width: 500px;
+    height: 350px;
+    border: 2px solid black;
+    display: flex;
+    margin: auto;
+}
