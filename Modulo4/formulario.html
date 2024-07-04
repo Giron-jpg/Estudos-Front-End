@@ -19,8 +19,9 @@
             <p><input type="submit" value="Enviar"></p>
         </form>
         <p>Alguns parâmetros:</p>
-        <p>action - cria um vínculo com um arquivo de outra linguagem (posteriormente associado a um script).</p>
-        <p>autocomplete (on/off) - mostra opções para completar uma caixa em um cadastro.</p>
+        <p><b>action </b>- cria um vínculo com um arquivo de outra linguagem (posteriormente associado a um script).</p>
+        <p><b>autocomplete (on/off)</b> - mostra opções para completar uma caixa em um cadastro.</p>
+        <p><b>method</b> - define o método de compartilhamento de envio de dados. Por padrão ele é definido como GET (limite máximo de 3000 letras), com isso os dados preenchidos no formulário são expostos na url (ex.: buscas no google - ajuda no compartilhamento). O método POST (Prefirido no envio de imagens) mascara as respostas do formulário na url porém ainda ficam acessíveis no <b>dev tools > Network > nome.arquivo > headers</b>. Para mais segurança devemos aprender sobre HTTPS</p>
     </section>
 </body>
 </html>
