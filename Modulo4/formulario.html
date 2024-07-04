@@ -20,8 +20,17 @@
         </form>
         <p>Alguns parâmetros:</p>
         <p><b>action </b>- cria um vínculo com um arquivo de outra linguagem (posteriormente associado a um script).</p>
-        <p><b>autocomplete (on/off)</b> - mostra opções para completar uma caixa em um cadastro.</p>
+        <p><b>autocomplete (on/off)</b> - mostra opções para completar uma caixa em um cadastro. Para melhorar o desempenho deve-se inserir um autocomplete em cada input para identificar qual é o tipo de sugestão que deve aparecer</p>
         <p><b>method</b> - define o método de compartilhamento de envio de dados. Por padrão ele é definido como GET (limite máximo de 3000 letras), com isso os dados preenchidos no formulário são expostos na url (ex.: buscas no google - ajuda no compartilhamento). O método POST (Prefirido no envio de imagens) mascara as respostas do formulário na url porém ainda ficam acessíveis no <b>dev tools > Network > nome.arquivo > headers</b>. Para mais segurança devemos aprender sobre HTTPS</p>
+        <p><b>required</b> - normalmente inserido no input, torna obrigatorio o preenchimento de um campo. Esse parametro pode ter especificações como tamanho mínimo e máx (minlength e maxlength)</p>
+        <p><b>size</b> - especifica o tamanho da caixa (em caractéres) que recebera o dado</p>
+        <p><b>placeholder</b> - preenche previamente o conteudo da caixa com alguma dica se necessário.</p>
+
+        <h2>Tipos de Input</h2>
+        <p>text - permite inserção de textos</p>
+        <p>submit - cria um botão que manda os dados</p>
+        <p>password - omite o texto digitado em "*"</p>
+        <p>reset - cria um botão que limpa os dados do formulário</p>
     </section>
 </body>
 </html>
