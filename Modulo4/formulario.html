@@ -9,13 +9,18 @@
 <body>
     <section>
         <h1>Criando formulários</h1>
-        <p>Para criar um formulário usamos a tag form e dentro dela inserimos os elementos necessários. Para criar a caixa de digitação usamos a tag input que é acompanhada de mais uma informação que varia de acordo com o tipo de dado. Ex.:</p>
+        <p>Para criar um formulário usamos a tag form e dentro dela inserimos os elementos necessários. Para criar a caixa de digitação usamos a tag input que é acompanhada de mais uma informação que varia de acordo com o tipo de dado. É importante que todo input seja acompanhado de um label para que haja direcionamento entre o nome do elemento e o input. Ex.:</p>
         <br>
-        <form>
-            <p>Nome: <input type="text" name="nome" id="nome"></p>
-            <p>Sobrenome: <input type="text" name="Sobrenome" id="Sobrenome"></p>
+        <form action="cadastro.php" autocomplete="off">
+            <p><label for="idnome">Nome: </label>
+                <input type="text" name="nome" id="idnome"></p>
+            <p><label for="idsobrenome">Sobrenome:</label> 
+                <input type="text" name="Sobrenome" id="idsobrenome"></p>
             <p><input type="submit" value="Enviar"></p>
         </form>
+        <p>Alguns parâmetros:</p>
+        <p>action - cria um vínculo com um arquivo de outra linguagem (posteriormente associado a um script).</p>
+        <p>autocomplete (on/off) - mostra opções para completar uma caixa em um cadastro.</p>
     </section>
 </body>
 </html>
