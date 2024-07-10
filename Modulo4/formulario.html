@@ -9,14 +9,18 @@
 <body>
     <section>
         <h1>Criando formulários</h1>
-        <p>Para criar um formulário usamos a tag form e dentro dela inserimos os elementos necessários. Para criar a caixa de digitação usamos a tag input que é acompanhada de mais uma informação que varia de acordo com o tipo de dado. É importante que todo input seja acompanhado de um label para que haja direcionamento entre o nome do elemento e o input. Ex.:</p>
+        <p>Para criar um formulário usamos a tag form e dentro dela inserimos os elementos necessários. Para criar a caixa de digitação usamos a tag input que é acompanhada de mais uma informação que varia de acordo com o tipo de dado. É importante que todo input seja acompanhado de um label para que haja direcionamento entre o nome do elemento e o input. Para regular melhor alguns formulários é interessante estudar mais RegEx Ex.:</p>
         <br>
-        <form action="cadastro.php" autocomplete="off">
+        <form action="cadastro.php" autocomplete="on">
             <p><label for="idnome">Nome: </label>
-                <input type="text" name="nome" id="idnome">
+                <input type="text" name="nome" id="idnome" autocomplete="name">
             </p>
             <p><label for="idsobrenome">Sobrenome:</label> 
                 <input type="text" name="Sobrenome" id="idsobrenome">
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" autocomplete="email">
             </p>
             <p><label for="imedia">Média</label>
                 <input type="number" name="media" id="imedia" min="0" max="10" step="0.1">
@@ -38,6 +42,13 @@
         <p><b>required</b> - normalmente inserido no input, torna obrigatorio o preenchimento de um campo. Esse parametro pode ter especificações como tamanho mínimo e máx (minlength e maxlength)</p>
         <p><b>size</b> - especifica o tamanho da caixa (em caractéres) que recebera o dado</p>
         <p><b>placeholder</b> - preenche previamente o conteudo da caixa com alguma dica se necessário.</p>
+        <p><b>pattern</b> - torna obrigatório um padrão para envio de um determinado dado. Ex.: pattern="^\(d{2}\) \d{4,5}-\d{4}$"</p>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(d{2}\) \d{4,5}-\d{4}$">
+            </p>
+        </form>
 
         <h2>Tipos de Input</h2>
         <p>text - permite inserção de textos</p>
@@ -48,6 +59,8 @@
         <p>month - cria caixa para mês e ano</p>
         <p>number - para inserirvalores numéricos (pode ser usado com os parâmetros max e min para determinar máximos mínimos e step para valores fracionados)</p>
         <p>time - para cadastro de horas</p>
+        <p>tel - cadastro de telefones (não vem com padrão)</p>
+        <p>email - cadastro de email (também não vem com padrão)</p>
     </section>
 </body>
 </html>
