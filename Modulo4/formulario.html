@@ -9,32 +9,38 @@
 <body>
     <section>
         <h1>Criando formulários</h1>
-        <p>Para criar um formulário usamos a tag form e dentro dela inserimos os elementos necessários. Para criar a caixa de digitação usamos a tag input que é acompanhada de mais uma informação que varia de acordo com o tipo de dado. É importante que todo input seja acompanhado de um label para que haja direcionamento entre o nome do elemento e o input. Para regular melhor alguns formulários é interessante estudar mais RegEx Ex.:</p>
+        <p>Para criar um formulário usamos a tag form e dentro dela inserimos os elementos necessários. Para criar a caixa de digitação usamos a tag input que é acompanhada de mais uma informação que varia de acordo com o tipo de dado. É importante que todo input seja acompanhado de um label para que haja direcionamento entre o nome do elemento e o input. Para regular melhor alguns formulários é interessante estudar mais RegEx </p>
+        <p>Para agrupar todo o formulário em um campo usamos a tag <b>fieldset</b> e ainda podemos usar a tag <b>legend</b> para dar nome ao conjunto de dados</p>
         <br>
-        <form action="cadastro.php" autocomplete="on">
-            <p><label for="idnome">Nome: </label>
-                <input type="text" name="nome" id="idnome" autocomplete="name">
-            </p>
-            <p><label for="idsobrenome">Sobrenome:</label> 
-                <input type="text" name="Sobrenome" id="idsobrenome">
-            </p>
-            <p>
-                <label for="iemail">E-mail:</label>
-                <input type="email" name="email" id="iemail" autocomplete="email">
-            </p>
-            <p><label for="imedia">Média</label>
-                <input type="number" name="media" id="imedia" min="0" max="10" step="0.1">
-            </p>
-            <p>
-                <label for="imes">Início do serviço</label>
-                <input type="month" name="mes" id="imes">
-            </p>
-            <p>
-                <label for="idia">Ano de nascimento:</label>
-                <input type="date" name="dianascimento" id="idia">
-            </p>
-            <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar" ></p>
-        </form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <form action="cadastro.php" autocomplete="on">
+                <p><label for="idnome">Nome: </label>
+                    <input type="text" name="nome" id="idnome" autocomplete="name">
+                </p>
+                <p><label for="idsobrenome">Sobrenome:</label>
+                    <input type="text" name="Sobrenome" id="idsobrenome">
+                </p>
+                <p>
+                    <label for="iemail">E-mail:</label>
+                    <input type="email" name="email" id="iemail" autocomplete="email">
+                </p>
+                <p><label for="imedia">Média</label>
+                    <input type="number" name="media" id="imedia" min="0" max="10" step="0.1">
+                </p>
+                <p>
+                    <label for="imes">Início do serviço</label>
+                    <input type="month" name="mes" id="imes">
+                </p>
+                <p>
+                    <label for="idia">Ano de nascimento:</label>
+                    <input type="date" name="dianascimento" id="idia">
+                </p>
+            </form>
+        </fieldset>
+                
+                <p>
+                    <input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
         <p>Alguns parâmetros:</p>
         <p><b>action </b>- cria um vínculo com um arquivo de outra linguagem (posteriormente associado a um script).</p>
         <p><b>autocomplete (on/off)</b> - mostra opções para completar uma caixa em um cadastro. Para melhorar o desempenho deve-se inserir um autocomplete em cada input para identificar qual é o tipo de sugestão que deve aparecer</p>
@@ -42,11 +48,12 @@
         <p><b>required</b> - normalmente inserido no input, torna obrigatorio o preenchimento de um campo. Esse parametro pode ter especificações como tamanho mínimo e máx (minlength e maxlength)</p>
         <p><b>size</b> - especifica o tamanho da caixa (em caractéres) que recebera o dado</p>
         <p><b>placeholder</b> - preenche previamente o conteudo da caixa com alguma dica se necessário.</p>
-        <p><b>pattern</b> - torna obrigatório um padrão para envio de um determinado dado. Ex.: pattern="^\(d{2}\) \d{4,5}-\d{4}$"</p>
+        <p><b>pattern</b> - torna obrigatório um padrão para envio de um determinado dado. Ex.: pattern="^\(\d{2}\) \d{4,5}-\d{4}$"</p>
         <form action="cadastro.php" method="get" autocomplete="on">
             <p>
                 <label for="itel">Telefone: </label>
-                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(d{2}\) \d{4,5}-\d{4}$">
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\) \d{4,5}-\d{4}$" placeholder="(xx) xxxxx-xxxx">
+                <input type="submit" value="Enviar">
             </p>
         </form>
 
