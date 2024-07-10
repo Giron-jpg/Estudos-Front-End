@@ -48,7 +48,26 @@
                     <label for="itel">Telefone: </label>
                     <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\) \d{4,5}-\d{4}$" placeholder="(xx) xxxxx-xxxx">
                 </p>
-                
+                <p>
+                    <label for="iestado">Estado: </label>
+                    <select name="Estado" id="iestado" required>
+                        <option value="" selected>-- Estado --</option>
+                        <option value="PR">Paraná</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="iprof">Profissão: </label>
+                    <input type="text" name="prof" id="iprof" list="prflst">
+                    <datalist id="prflst">
+                        <option>Administrador</option>
+                        <option>Desenvolvedor</option>
+                        <option>Engenheiro</option>
+                        <option>Professor</option>
+                    </datalist>
+                </p>
             </fieldset>
             <fieldset>
                 <legend>Preferências</legend>
@@ -96,6 +115,9 @@
         <p>range - cria um medidor de nível para selecionar um valor dentro de um intervalo definido</p>
         <p>color - permite escolher uma cor e envia para o servidor o código hexadecimal</p>
         <p>file - cria uma caixa para seleção e envio de arquivos (deve ser usado o método post para o envio devido a limitação de 3MB do get)</p>
+
+        <h2>Comando Select</h2>
+        <p>Em formulários podemos pedir para que o usuário selecione uma das opções inseridas, para isso usamos a tag select. Essa tag juntamente com a tag option permite determinar diversos valores para serem selecionados, sendo ainda possível agrupa-los em um conjunto com a tag optgroup, justamente para facilitar na seleção da opção. Outro comando similar com o select que pode ser utilizado é o datalist que permite selecionar uma opção ou até mesmo digitar para adicionar ou encontrar mais facilmente um dado.</p>
     </section>
 </body>
 </html>
