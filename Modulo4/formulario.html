@@ -54,9 +54,17 @@
                 <legend>Preferências</legend>
                 <input type="checkbox" name="fut" id="ifut"> <label for="ifut">Futebol</label>
                 <input type="checkbox" name="bas" id="ibas"> <label for="ibas">Basquete</label>
-                <input type="checkbox" name="vol" id="ivol"> <label for="ivol">Vôlei</label>
+                <input type="checkbox" name="vol" id="ivol"> <label for="ivol">Vôlei</label> <br>
+                
+                <label for="icor">Cor da camisa do time</label> <input type="color" name="cor" id="icor">
+                <p>
+                    <label for="iarquivo">Quer dar um exempolo de camisa?</label> <br>
+                    <input type="file" name="arquivo" id="iarquivo">
+                </p>
+
             </fieldset>
             <p>
+                <label for="inivel">Satisfação: </label><input type="range" name="nivel" id="inivel" min="0" max="5">
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpar">
             </p>    
@@ -85,6 +93,9 @@
         <p>email - cadastro de email (também não vem com padrão)</p>
         <p>radio - cria uma caixa de marcação permanente (para trocar deve-se criar uma opção alternativa <strong>com o mesmo nome</strong>)</p>
         <p>checkbox - cria uma caixa de marcação</p>
+        <p>range - cria um medidor de nível para selecionar um valor dentro de um intervalo definido</p>
+        <p>color - permite escolher uma cor e envia para o servidor o código hexadecimal</p>
+        <p>file - cria uma caixa para seleção e envio de arquivos (deve ser usado o método post para o envio devido a limitação de 3MB do get)</p>
     </section>
 </body>
 </html>
