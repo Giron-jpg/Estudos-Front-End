@@ -68,6 +68,10 @@
                         <option>Professor</option>
                     </datalist>
                 </p>
+                <p>
+                    <label for="imsg">Escreva um pouco sobre você: </label> <br>
+                    <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+                </p>
             </fieldset>
             <fieldset>
                 <legend>Preferências</legend>
@@ -83,7 +87,8 @@
 
             </fieldset>
             <p>
-                <label for="inivel">Satisfação: </label><input type="range" name="nivel" id="inivel" min="0" max="5">
+                <label for="inivel">Satisfação: </label><input type="range" name="nivel" id="inivel" min="0" max="5" value="3" oninput="ival.innerHTML = Number(inivel.value)">
+                <output name="val" id="ival">3</output> <br>
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpar">
             </p>    
@@ -118,6 +123,23 @@
 
         <h2>Comando Select</h2>
         <p>Em formulários podemos pedir para que o usuário selecione uma das opções inseridas, para isso usamos a tag select. Essa tag juntamente com a tag option permite determinar diversos valores para serem selecionados, sendo ainda possível agrupa-los em um conjunto com a tag optgroup, justamente para facilitar na seleção da opção. Outro comando similar com o select que pode ser utilizado é o datalist que permite selecionar uma opção ou até mesmo digitar para adicionar ou encontrar mais facilmente um dado.</p>
+        <h2>Tag Output</h2>
+        <p>Para exibir informações referentes a saída de dados usamos programação</p>
+
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="inum1">Numero 1: </label>
+                <input type="number" name="num1" id="inum1" min="0" max="100" required oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+            </p>
+            <p>
+                <label for="inum2">Número 2:</label>
+                <input type="number" name="num2" id="inum2" min="0" max="100" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+            </p>
+            <p>
+                <label for="isoma"> Resultado soma: </label>
+                <output name="soma" id="isoma">0</output>
+            </p>
+        </form>
     </section>
 </body>
 </html>
