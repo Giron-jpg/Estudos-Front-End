@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/tela.css" media="screen">
     <link rel="stylesheet" href="estilos/impressora.css" media="print">
+    <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portrait)">
+    <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
     <title>Media Query</title>
 </head>
 <body>
@@ -22,7 +24,17 @@
         <h2>O que é?</h2>
         <p>Media Query  são um módulo de CSS que definem expressões, permitindo ajustar visualizações a uma variedade específica de dispositivos de saída sem mudar o conteúdo. Em outras palavras é uma adaptação feita através das folhas de estilo que permitem uma variedade de formatações que se adaptem a tela/funcionalidade do usuário sem a necessidade de alterar o conteúdo.</p>
         <h2>Como usar</h2>
-        <p>Para usar media queries é necessário criar alguns links para arquivos css diferentes dentro de uma mesma página html. Após a criação do mesmo é necessário inserir o parâmetro "media" que pode receber valores como: screen (para a tela principal usada no site), print (formatação da página para impressão)</p>
+        <p>
+            Para usar media queries é necessário criar alguns links para arquivos css diferentes dentro de uma mesma página html. Após a criação do mesmo é necessário inserir o parâmetro "media" que pode receber valores como: screen (para a tela principal usada no site), print (formatação da página para impressão), all (vale para todas as medias).</p>
+        <p>
+            As media queries são compostas de media types e media features. As media types são inseridas dentro do parâmetro media sem o uso do parênteses, já a media features são inseridas junto com as types e com o uso de parênteses. Sendo assim o uso do parâmetro media poderia ser escrito como: 
+        </p>
+        <pre>
+            media="screen and (orientation: portrait/landscape)"
+        </pre>
+        <p>
+            Nesse caso é necessário deixar entre parênteses a orientação do dispositivo (media features). O uso de portrait ou landscape depende da orientação do dispositivo, sendo que portrait se refere ao modo retrato dos dispositivos que possuem um acelerômetro (celular, tablet, etc.). Já o landscape de ve ser utilizado nestes mesmo dispositivos porém no modo paisagem.
+        </p>
     </article>
 
 </body>
