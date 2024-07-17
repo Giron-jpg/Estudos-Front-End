@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 2</title>
+    <style>
+        /*Configurações gerais*/
+        body{
+            padding: 0;
+            margin: 0;
+            width: 96vw;
+            height: 100vh;
+            background-color: #333eff;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        /*Configurações paisagem*/
+        @media screen and (orientation: landscape) {
+            body{
+                background-image: url(imagens/cev-landscape.jpg);
+                background-position: left bottom;
+            }
+        }
+        /*Configurações retrato*/
+        @media  screen and (orientation: portrait) {            
+            body{
+            background-image: url(imagens/cev-portrait.jpg);
+            background-position: center bottom;
+            }
+        }
+    </style>
+    <title>Teste Imagem 2</title>
+</head>
+<body>
+    <p>
+        Mude o tamanho da pagina
+    </p>
+</body>
+</html>

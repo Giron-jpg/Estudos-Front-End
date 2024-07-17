@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/tela.css" media="all">
     <link rel="stylesheet" href="estilos/impressora.css" media="print">
-    <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portrait)">
-    <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
     <title>Media Query</title>
 </head>
 <body>
@@ -26,6 +24,7 @@
         <h2>Como usar</h2>
         <p>
             Para usar media queries é necessário criar alguns links para arquivos css diferentes dentro de uma mesma página html. Após a criação do mesmo é necessário inserir o parâmetro "media" que pode receber valores como: screen (para a tela principal usada no site), print (formatação da página para impressão), all (vale para todas as medias).</p>
+            <p>Também é possível criar uma media query dentro de um mesmo arquivo html ou arquivo único css. Para isso utilizamos a criação de regras.</p>
         <p>
             As media queries são compostas de media types e media features. As media types são inseridas dentro do parâmetro media sem o uso do parênteses, já a media features são inseridas junto com as types e com o uso de parênteses. Sendo assim o uso do parâmetro media poderia ser escrito como: 
         </p>
@@ -37,11 +36,10 @@
         </p>
 
         <h2>Utilizando</h2>
-        <p>Alternando entre imagens para dispostivos em modo paisagem e retrato</p>
-        <section>
-            <p>Mude a orientação mudando o tamanho da pagina</p>
-        </section>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate est consequatur expedita ab eveniet exercitationem magni aliquam aut voluptate nesciunt sit illum dolore libero mollitia, necessitatibus vel amet dolor accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum dolor doloribus nulla quae, natus, sequi veritatis alias nobis totam ratione, rem excepturi. Fugit temporibus iure autem tempore repudiandae at.</p>
+        <p>Alternando entre imagens para dispostivos em modo paisagem e retrato com diferentes arquivos css.</p>
+        <a href="teste1.html" target="_blank">Clique aqui</a>
+        <p>Alterando a mesma imagem em um arquivo único html ou css.</p>
+        <a href="teste2.html" target="_blank">Clique aqui</a>
     </article>
 
 </body>
