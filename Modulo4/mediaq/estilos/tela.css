@@ -27,11 +27,23 @@ header li{
 }
 
 article{
+    background-color: rgba(255, 255, 255, 0.76);
     text-align: justify;
     display: block;
     max-width: 600px;
-    min-width: 400px;
+    min-width: 480px;
     margin: auto;
+}
+
+section{
+    display: block;
+    margin: auto;
+    border: solid 2px black;
+    background-color: #333eff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    max-width: 500px;
 }
 
 article h2, p {
