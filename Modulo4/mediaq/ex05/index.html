@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Exercicio 5</title>
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <i id="burguer" class="fa-solid fa-bars" onclick="clickMenu()"></i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Sobre</a></li>
@@ -22,14 +24,23 @@
         <article>
             <h2>Testes Media Query</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius culpa rem, esse perferendis assumenda fugit dolor corrupti non deserunt in! Officia repellendus, sit eaque quod odio dicta dolores fugit debitis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto quos cumque enim recusandae omnis, quisquam consequuntur harum nostrum aspernatur. A dolores id ducimus officiis sunt iste, quas laudantium quidem voluptas. lore 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius culpa rem, esse perferendis assumenda fugit dolor corrupti non deserunt in! Officia repellendus, sit eaque quod odio dicta dolores fugit debitis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto quos cumque enim recusandae omnis, quisquam consequuntur harum nostrum aspernatur. A dolores id ducimus officiis sunt iste, quas laudantium quidem voluptas.
             </p>
-            
+
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sed nesciunt asperiores, incidunt et debitis consectetur velit cum ipsam accusantium excepturi delectus? Dolorum sequi ab vel dicta quia placeat aperiam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error eius voluptatem autem laboriosam repudiandae molestias cum? Fugiat accusantium minus similique doloremque, repellendus laboriosam, deserunt consequatur sit quas laborum obcaecati? Consectetur!
             </p>
 
         </article>
     </main>
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
