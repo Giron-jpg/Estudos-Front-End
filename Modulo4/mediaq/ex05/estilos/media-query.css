@@ -11,15 +11,7 @@
     menu ul li{
         display: inline-block;
     }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1280px) {
-    /*Desktop*/
-
-}
-
-@media screen and (min-width: 1280px) {
-    /*Telas Grandes*/
-
-
+    main{
+        max-width: 768px;
+    }
 }
