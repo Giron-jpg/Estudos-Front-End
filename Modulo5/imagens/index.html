@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Flexbox CSS</title>
     <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        header, section{
+            margin: 16px;
+        }
+
         div.conteiner{
             background-color: orange;
             display: flex;
@@ -13,6 +22,12 @@
             border: 1px solid black;
             text-align: center;
             flex: auto;
+        }
+
+        img{
+            display: block;
+            margin: auto;
+            width: 80%;
         }
 
     </style>
@@ -36,6 +51,14 @@
             <div class="item">F</div>
             <div class="item">G</div>
         </div>
+        <h2>Atributos</h2>
+        <p>
+            Outros atributos associados ao ao display flex são:
+        </p>
+        <ul>
+            <li>Flexdirection: define a direção em que as caixas filhas serão alinhadas (imagem abaixo demonstra os tipos de valores e as direções dos eixos)</li>
+        </ul>
+        <img src="flexdirection.PNG" alt="tipos de valores e as direções dos eixos">
 
     </section>
 </body>
